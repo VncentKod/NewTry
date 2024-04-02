@@ -8,7 +8,7 @@
 .miniature {
     display: flex;
     flex-direction: column;
-    padding-right: 30px;
+    padding-right: 15px;
     cursor: pointer;
 }
 
@@ -33,6 +33,9 @@
 .grid-film-selection {
     grid-template-columns: 1fr 1fr;
     }
+body {
+    padding-left: 10px;
+}
 }
 
 @media (min-width: 800px) and (max-width: 1199px) {
