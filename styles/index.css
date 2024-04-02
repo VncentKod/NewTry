@@ -8,6 +8,7 @@
     padding-right: 10px;
     transition: color 0.15s;
     transition: font-size 0.15s;
+    cursor: pointer;
 }
 
 .menu-bar-button:hover {
