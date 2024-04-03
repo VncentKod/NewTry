@@ -37,6 +37,8 @@ const menuBarButtonList = document.querySelectorAll('.js-menu-bar-button');
 menuBarButtonList.forEach((button) => {
     button.addEventListener('click', () => {
         const filmTypeToPass = button.dataset.typeFilm;
+        makeButtonUnselected()
+        button.classList.add('selected-button')
         getSelectedFilm(filmTypeToPass);
     })})
 
@@ -53,4 +55,10 @@ function getSelectedFilm(filmType) {
         })
     }
     createGrid(futureSelectedFilm);
+}
+
+function makeButtonUnselected() {
+    menuBarButtonList.forEach((rm) => {
+        rm.classList.remove('selected-button');
+    }) 
 }
