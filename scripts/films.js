@@ -1,4 +1,4 @@
-export const dataList = {
+const dataList = {
   Movie: [
       {
           _Number: "2148",
@@ -169,3 +169,4 @@ export const dataList = {
   ]
 };
 
+export const filmList = dataList.Movie;

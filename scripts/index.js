@@ -1,7 +1,7 @@
-import { dataList } from "./films.js";
+import { filmList } from "./films.js";
 
 // Make the Data Usable.
-const filmList = dataList.Movie;
+
 
 createGrid(filmList);
 
@@ -32,14 +32,14 @@ function createGrid(filmListSelected) {
     })
 }
 
-
+// Add the click event on a button in order to reformat the grid
 const menuBarButtonList = document.querySelectorAll('.js-menu-bar-button');
 menuBarButtonList.forEach((button) => {
     button.addEventListener('click', () => {
         const filmTypeToPass = button.dataset.typeFilm;
-        makeButtonUnselected()
-        button.classList.add('selected-button')
-        getSelectedFilm(filmTypeToPass);
+        makeButtonUnselected() // Unset every button
+        button.classList.add('selected-button') // Set only the button that we want to.
+        getSelectedFilm(filmTypeToPass); // Look at the data of the button to display a correct grid
     })})
 
 function getSelectedFilm(filmType) {
@@ -58,7 +58,7 @@ function getSelectedFilm(filmType) {
 }
 
 function makeButtonUnselected() {
-    menuBarButtonList.forEach((rm) => {
-        rm.classList.remove('selected-button');
+    menuBarButtonList.forEach((everyButton) => {
+        everyButton.classList.remove('selected-button');
     }) 
 }

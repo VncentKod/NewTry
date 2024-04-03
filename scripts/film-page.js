@@ -1,6 +1,4 @@
-import {dataList} from './films.js'
-
-const filmList = dataList.Movie // Make data usable
+import {filmList} from './films.js'
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
