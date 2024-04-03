@@ -51,7 +51,7 @@ document.querySelector('.js-all-container').innerHTML = html;
 
 const returnButtonElement = document.querySelector('.js-return-button');
 returnButtonElement.addEventListener('click', () => {
-    document.location.href=`https://vncentkod.github.io/OurCanalProject/`;
+    document.location.href=`https://vncentkod.github.io/NewTry/`;
 })
 
 const lectureButtonElement = document.querySelector('.js-lecture-button');
