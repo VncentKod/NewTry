@@ -14,7 +14,7 @@ filmList.forEach((film) => {
 });
 
 let html = `<div class="title-film-page">
-<img class="return-button js-return-button" src="../images/left-arrow.png" alt="">
+<img class="return-button js-return-button" src="/scripts/left-arrow.png" alt="">
 ${(matchingFilm._TranslatedTitle).toUpperCase()}
 </div>
 <div class="film-selection">

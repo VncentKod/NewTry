@@ -46,7 +46,6 @@ function getSelectedFilm(filmType) {
     let futureSelectedFilm = []
     if (filmType === "All") {
         futureSelectedFilm = filmList
-        console.log('passed');
     } else {
         filmList.forEach((film) => {
             if (film._Category.includes(filmType)) {
